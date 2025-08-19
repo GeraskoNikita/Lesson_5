@@ -1,5 +1,12 @@
 public class Main {
     public static void main(String[] args) {
+        Boss boss = new Boss();
+        boss.setBossHealth(700);
+        boss.setBossDamage(50);
+        boss.setBossDefence("Magical");
+        System.out.println("Boss health: " + boss.getBossHealth() + " damage: " + boss.getBossDamage()
+                + " defence: " + boss.getBossDefence());
+        
         int count = 0;
         for (Hero hero : createHeroes()) {
             System.out.println(
